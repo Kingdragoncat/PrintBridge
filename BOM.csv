@@ -1,0 +1,16 @@
+Reference,Qty,Value,Package,Description,Unit Price,Subtotal,Link
+"U1",1,ESP32-S3-WROOM-1,WROOM,ESP32-S3 WiFi/BLE Module,~$3.00,~$3.00,
+"J1",1,USB-A host receptacle,Through-hole,USB-A female 90-degree (C168708),~$0.15,~$0.15,https://www.lcsc.com/search?q=C168708
+"J2",1,USB-C power input,SMD,Type-C 12-pin (C165948),~$0.10,~$0.10,https://www.lcsc.com/search?q=C165948
+"U2",1,AMS1117-3.3,SOT-223,3.3V Linear Regulator (C6186),~$0.05,~$0.05,https://www.lcsc.com/search?q=C6186
+"SW1, SW2",2,Tactile switch,SMD,TS-1187A-B-A-B (C318884),~$0.02,~$0.04,https://www.lcsc.com/search?q=C318884
+"R1, R2",2,10k,0603,SMD resistor,~$0.01,~$0.02,
+"R3, R4",2,5.1k,0603,SMD resistor,~$0.01,~$0.02,
+"R5",1,330R,0603,SMD resistor,~$0.01,~$0.01,
+"C1",1,100nF,0603,Ceramic decoupling capacitor,~$0.01,~$0.01,
+"C2",1,10uF,0805,Ceramic bulk capacitor,~$0.02,~$0.02,
+"D1",1,LED,0603,Status LED,~$0.02,~$0.02,
+"F1",1,Polyfuse,1206,500mA-1A PTC fuse,~$0.10,~$0.10,
+"J3",1,Conn_01x04,2.54mm,UART header for flashing,~$0.05,~$0.05,
+,,,,,,,,
+,,,,,"TOTAL",,"~$3.59",

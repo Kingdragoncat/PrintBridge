@@ -1,0 +1,6 @@
+(version 1)
+
+(rule "Power trace necking"
+	(condition "A.NetClass == 'Power'")
+	(constraint track_width (min 0.254mm) (opt 0.6mm) (max 0.6mm))
+)
