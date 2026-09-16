@@ -6692,6 +6692,15 @@
 		(uuid "f25dafed-7327-497e-837c-0ed5987f6cd4")
 	)
 	(segment
+		(start 238.2 95.2)
+		(end 239.3875 95.2)
+		(width 0.6)
+		(locked yes)
+		(layer "B.Cu")
+		(net 5)
+		(uuid "fc5e5540-deff-47ec-81e1-7e95dd168d09")
+	)
+	(segment
 		(start 177.97 64.7125)
 		(end 177.97 63.8)
 		(width 0.6)

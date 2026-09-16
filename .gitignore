@@ -7,9 +7,15 @@ fp-info-cache
 # KiCad backup directory
 *-backups/
 
+# KiCad autosave files
+_autosave-*
+
 # OS files
 Thumbs.db
 .DS_Store
 
-# Internal documentation
+# Internal docs (not for public)
 docs/
+
+# PlatformIO build output
+software/.pio/
