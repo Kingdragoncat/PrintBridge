@@ -4,3 +4,13 @@
 	(condition "A.NetClass == 'Power'")
 	(constraint track_width (min 0.254mm) (opt 0.6mm) (max 0.6mm))
 )
+
+(rule "J2 USB-C connector internal pad clearance"
+	(condition "A.insideCourtyard('J2') && B.insideCourtyard('J2')")
+	(constraint clearance (min 0.09mm))
+)
+
+(rule "J2 USB-C connector internal hole clearance"
+	(condition "A.insideCourtyard('J2') && B.insideCourtyard('J2')")
+	(constraint hole_clearance (min 0.15mm))
+)
