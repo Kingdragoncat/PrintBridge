@@ -19,3 +19,9 @@ docs/
 
 # PlatformIO build output
 software/.pio/
+
+# Private local configuration & credentials (never commit to git)
+software/src/config.local.h
+
+# Windows USB Drivers
+drivers/

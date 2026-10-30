@@ -6183,16 +6183,6 @@
 		(layer "F.SilkS")
 		(uuid "3360dd09-e7e7-4a87-936d-9e2fea7053e2")
 	)
-	(gr_line
-		(start 201.0 57.3)
-		(end 258 57.3)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "7a41c2e5-2b8f-4e9a-9c3d-5f6a8b1d4e7c")
-	)
 	(gr_arc
 		(start 171.6 94.9)
 		(mid 170.5393 94.4607)
@@ -6203,6 +6193,16 @@
 		)
 		(layer "F.SilkS")
 		(uuid "beb53d3a-1031-463b-8a46-dbe5b2367fe5")
+	)
+	(gr_line
+		(start 201 57.3)
+		(end 258 57.3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7a41c2e5-2b8f-4e9a-9c3d-5f6a8b1d4e7c")
 	)
 	(gr_arc
 		(start 258 57.3)

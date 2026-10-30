@@ -1,0 +1,49 @@
+services:
+  # 1. High-speed Redis/Valkey for sccache (Rust build cache) & dev caching
+  redis:
+    image: valkey/valkey:8-alpine
+    container_name: mini-redis
+    restart: always
+    ports:
+      - "6379:6379"
+    command: valkey-server --maxmemory 2gb --maxmemory-policy allkeys-lru --save 60 1000
+    volumes:
+      - redis_data:/data
+
+  # 2. Qdrant Vector DB for Shared AI Memory & Codebase Semantic Search
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: mini-qdrant
+    restart: always
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  # 3. SearXNG Private Search API (JSON enabled for AI Agents)
+  searxng:
+    image: searxng/searxng:latest
+    container_name: mini-searxng
+    restart: always
+    ports:
+      - "8085:8080"
+    volumes:
+      - ./searxng:/etc/searxng:rw
+    environment:
+      - SEARXNG_BASE_URL=http://mini:8085/
+
+  # 4. PrintBridge Remote Gateway (JetDirect TCP 9100 & Web Dashboard 9101)
+  printbridge:
+    image: nginx:alpine
+    container_name: mini-printbridge
+    restart: always
+    ports:
+      - "9100:9100"
+      - "9101:9101"
+    volumes:
+      - ./printbridge/nginx.conf:/etc/nginx/nginx.conf:ro
+
+volumes:
+  redis_data:
+  qdrant_data:
